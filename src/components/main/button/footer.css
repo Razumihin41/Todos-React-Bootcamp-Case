@@ -1,0 +1,12 @@
+.footer {
+    width: 80%;
+    margin: 15px 0;
+}
+
+.footer.dark {
+    color: white;
+}
+
+.footer .note-number {
+    float: right;
+}
