@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Todos-React-Bootcamp-Case/static/css/main.3d6f2ab1.css",
-    "main.js": "/Todos-React-Bootcamp-Case/static/js/main.6f33b49c.js",
+    "main.css": "/Todos-React-Bootcamp-Case/static/css/main.55aa900c.css",
+    "main.js": "/Todos-React-Bootcamp-Case/static/js/main.6fc28345.js",
     "static/js/787.ec704a7a.chunk.js": "/Todos-React-Bootcamp-Case/static/js/787.ec704a7a.chunk.js",
     "index.html": "/Todos-React-Bootcamp-Case/index.html",
-    "main.3d6f2ab1.css.map": "/Todos-React-Bootcamp-Case/static/css/main.3d6f2ab1.css.map",
-    "main.6f33b49c.js.map": "/Todos-React-Bootcamp-Case/static/js/main.6f33b49c.js.map",
+    "main.55aa900c.css.map": "/Todos-React-Bootcamp-Case/static/css/main.55aa900c.css.map",
+    "main.6fc28345.js.map": "/Todos-React-Bootcamp-Case/static/js/main.6fc28345.js.map",
     "787.ec704a7a.chunk.js.map": "/Todos-React-Bootcamp-Case/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d6f2ab1.css",
-    "static/js/main.6f33b49c.js"
+    "static/css/main.55aa900c.css",
+    "static/js/main.6fc28345.js"
   ]
 }
