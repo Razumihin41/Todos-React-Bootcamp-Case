@@ -49,15 +49,27 @@ function Index() {
             message: toastMessage.message,
           }
         )
+        refreshData();
       })
       .catch((e) => {
         setToast(
           {
             checked: true,
             title: "Not Saved",
-            message: "Error source: <" + e.name + "> The network is to slow, Please try again!",
+            message: "Error source: <" + e.name + "> Please try again!",
           }
         )
+        setIsLoading(false);
+      })
+  };
+
+  const refreshData = () => {
+    axios("https://630f989736e6a2a04eddd072.mockapi.io/todos/")
+      .then(res => {
+        setNote(res.data);
+      })
+      .finally(() => {
+        setIsLoading(false);
       })
   };
 
@@ -66,23 +78,7 @@ function Index() {
       document.querySelector(".app").classList.remove("hidden");
       document.querySelector(".inputNameData").classList.add("hidden");
     }
-    axios({
-      method: "get",
-      url: `https://630f989736e6a2a04eddd072.mockapi.io/todos/`,
-    })
-      .then(res => {
-        setNote(res.data);
-      })
-      .catch((e) => setToast(
-        {
-          checked: true,
-          title: "Error",
-          message: "Failed to pull data: " + e,
-        }
-      ))
-      .finally(() => {
-        setIsLoading(false);
-      })
+    refreshData();
     statusLamp();
   }, []);
 
@@ -132,12 +128,13 @@ function Index() {
             " :)"
           }</h2>
         <Input
-          notes={note} setNotes={setNote}
           genericRequest={genericRequest}
+          setIsLoading={setIsLoading}
         />
         <List
           notes={note} setNotes={setNote}
           isLoading={isLoading}
+          setIsLoading={setIsLoading}
           genericRequest={genericRequest}
           setToast={setToast}
         />

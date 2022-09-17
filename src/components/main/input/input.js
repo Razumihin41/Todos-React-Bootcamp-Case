@@ -1,7 +1,7 @@
 import "./input.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-function Input({ notes, setNotes, genericRequest }) {
+function Input({ genericRequest, setIsLoading }) {
 
   const initialValue = "";
   const [inputNote, setInputNote] = useState(initialValue);
@@ -15,14 +15,8 @@ function Input({ notes, setNotes, genericRequest }) {
     if (inputNote.trim() === "" || inputNote.trim().length < 3) {
       return false;
     };
-    setNotes([...notes,
-    {
-      content: inputNote.trim(),
-      isCompleted: false,
-      id: notes.length === 0 ?
-        "1" : (Number(notes[notes.length - 1].id) + 1).toString(),
-    }
-    ]);
+    setInputNote(initialValue)
+    setIsLoading(true);
     genericRequest(
       "post",
       "",
@@ -30,11 +24,7 @@ function Input({ notes, setNotes, genericRequest }) {
       { checked: true, title: "Successfully Saved", message: "Text added" },
     );
   };
-
-  useEffect(() => {
-    setInputNote(initialValue);
-  }, [notes]);
-
+  
   return (
     <form onSubmit={inputSubmit} className='header'>
       <input onChange={changeInput} value={inputNote} placeholder='Please add note!' />

@@ -1,18 +1,10 @@
 import "./list.css";
 import BasicExample from "../bootstrap/spinner";
 
-function List({ notes, setNotes, isLoading, genericRequest, setToast }) {
+function List({ notes, setNotes, isLoading, setIsLoading, genericRequest, setToast }) {
 
   const checkedList = (e) => {
-    notes = notes.map(change => {
-      return {
-        content: change.content,
-        isCompleted: change.id === e.target.id ?
-          !change.isCompleted : change.isCompleted,
-        id: change.id,
-      };
-    });
-    setNotes(notes);
+    setIsLoading(true);
     genericRequest(
       "put",
       e.target.id,
@@ -40,17 +32,7 @@ function List({ notes, setNotes, isLoading, genericRequest, setToast }) {
 
   const deleteList = (e) => {
     let targetId = e.target.id;
-    let indexNumber;
-    indexNumber = notes.indexOf(notes.filter((item) => item.id === targetId)[0]);
-    notes.splice(indexNumber, 1);
-    notes = notes.map(item => {
-      return {
-        content: item.content,
-        isCompleted: item.isCompleted,
-        id: item.id,
-      };
-    });
-    setNotes(notes);
+    setIsLoading(true);
     genericRequest(
       "delete",
       targetId,
@@ -60,6 +42,7 @@ function List({ notes, setNotes, isLoading, genericRequest, setToast }) {
   };
 
   const savePostList = (e) => {
+    setIsLoading(true);
     genericRequest(
       "put",
       e.target.id,
@@ -70,13 +53,6 @@ function List({ notes, setNotes, isLoading, genericRequest, setToast }) {
 
   return (
     <div id='list' className='container'>
-      {
-        isLoading &&
-        <div className="loading">
-          <BasicExample />
-          <span>Loading..</span>
-        </div>
-      }
       <ul className='ulList'>
         {notes.map((item, index) => {
           return <li key={index}>
@@ -88,6 +64,12 @@ function List({ notes, setNotes, isLoading, genericRequest, setToast }) {
           </li>
         })}
       </ul>
+      {
+        isLoading &&
+        <div className="loading">
+          <BasicExample />
+        </div>
+      }
     </div>
   );
 };

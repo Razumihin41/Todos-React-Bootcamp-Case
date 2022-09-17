@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ToastMenu({ toast, setToast }) {
     return (
-        <Toast className='bg-secondary' show={toast.checked} delay={2000} autohide
+        <Toast className='bg-secondary' show={toast.checked} delay={3000} autohide
             style={{ position: "absolute", top: "10px", right: "13px" }}
             onClose={() => setToast({ checked: false, title: "", message: "" })}
         >
