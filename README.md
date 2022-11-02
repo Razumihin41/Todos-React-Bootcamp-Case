@@ -1,6 +1,6 @@
 # REACT TO DO LIST
 
-[PROJE LINK](https://razumihin41.github.io/Todos-React-Bootcamp-Case/)
+[PROJE LINK](https://tayfuntop.github.io/Todos-React-Bootcamp-Case/)
 
 [YOUTUBE PROFİL LINK](https://www.youtube.com/c/TayfunTp)
 
