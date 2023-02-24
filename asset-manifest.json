@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Todos-React-Bootcamp-Case/static/css/main.31288510.css",
-    "main.js": "/Todos-React-Bootcamp-Case/static/js/main.6fc28345.js",
-    "static/js/787.ec704a7a.chunk.js": "/Todos-React-Bootcamp-Case/static/js/787.ec704a7a.chunk.js",
-    "index.html": "/Todos-React-Bootcamp-Case/index.html",
-    "main.31288510.css.map": "/Todos-React-Bootcamp-Case/static/css/main.31288510.css.map",
-    "main.6fc28345.js.map": "/Todos-React-Bootcamp-Case/static/js/main.6fc28345.js.map",
-    "787.ec704a7a.chunk.js.map": "/Todos-React-Bootcamp-Case/static/js/787.ec704a7a.chunk.js.map"
+    "main.css": "/To-do-List/static/css/main.31288510.css",
+    "main.js": "/To-do-List/static/js/main.2b53733f.js",
+    "static/js/787.ec704a7a.chunk.js": "/To-do-List/static/js/787.ec704a7a.chunk.js",
+    "index.html": "/To-do-List/index.html",
+    "main.31288510.css.map": "/To-do-List/static/css/main.31288510.css.map",
+    "main.2b53733f.js.map": "/To-do-List/static/js/main.2b53733f.js.map",
+    "787.ec704a7a.chunk.js.map": "/To-do-List/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31288510.css",
-    "static/js/main.6fc28345.js"
+    "static/js/main.2b53733f.js"
   ]
 }
