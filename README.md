@@ -2,13 +2,13 @@
 
 # TO DO LIST
 
-## 🎥 Project Video
-
-![Proje Gifi](/public/project.gif)
-
 ## 📷 Project Image
 
 ![Project Image](/public/project.jpg)
+
+## 🎥 Project Video
+
+https://user-images.githubusercontent.com/100048051/221172176-6979fd02-ed5d-4ddc-87af-74b607111b87.mp4
 
 ## 🛠 Technologies and tools
 
@@ -16,6 +16,7 @@
 <img src="https://img.shields.io/badge/React-000000?logo=react&logoColor=blue" alt="React logo" title="React" height="25" />
 <img src="https://img.shields.io/badge/JavaScript-282C34?logo=javascript&logoColor=F7DF1E" alt="JavaScript logo" title="JavaScript" height="25" />
 <img src="https://img.shields.io/badge/CSS3-282C34?logo=css3&logoColor=1572B6" alt="CSS3 logo" title="CSS3" height="25" />
+<img src="https://img.shields.io/badge/Bootstrap-282C34?logo=bootstrap&logoColor=9267ce" alt="Bootstrap logo" title="Bootstrap" height="25" />
 <br>
 Axios 
 /
