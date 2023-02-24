@@ -1,4 +1,4 @@
-[PROJECT LINK](https://tayfuntop.github.io/React-weather-app/)
+[PROJECT LINK](https://tayfuntop.github.io/To-do-List/)
 
 # TO DO LIST
 
