@@ -2,14 +2,6 @@
 
 # TO DO LIST
 
-## 📷 Project Image
-
-![Project Image](/public/project.jpg)
-
-## 🎥 Project Video
-
-https://user-images.githubusercontent.com/100048051/221172176-6979fd02-ed5d-4ddc-87af-74b607111b87.mp4
-
 ## 🛠 Technologies and tools
 
 <p>
@@ -47,3 +39,10 @@ These instructions will get a copy of the project up and
 running on your local machine for development and testing purposes.
 ```
  
+## 📷 Project Image
+
+![Project Image](/public/project.jpg)
+
+## 🎥 Project Video
+
+https://user-images.githubusercontent.com/100048051/221172176-6979fd02-ed5d-4ddc-87af-74b607111b87.mp4
